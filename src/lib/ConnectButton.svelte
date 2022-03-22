@@ -49,15 +49,22 @@
 </script>
 
 {#if $connected}
-	<button on:click={onDisconnect} class="btn-connect-wallet"> Disconnect </button>
+	<button on:click={onDisconnect} class="outline btn-info"> Disconnect </button>
 {:else}
-	<button on:click={onConnect} class="btn-connect-wallet"> Connect </button>
+	<button on:click={onConnect} class="outline btn-info"> Connect </button>
 {/if}
 
 <style scoped>
 	button {
-		position: absolute;
+		width: 100%;
+		/* position: relative;
 		top: 5px;
-		right: 5px;
+		right: 5px; */
+		/* background-color: rgb(30, 66, 131);
+		color: white;
+		border-radius: 25px;
+		border: 1px solid white;
+		font-size: 18px;
+		cursor: pointer; */
 	}
 </style>
